@@ -1,9 +1,9 @@
 
 const Header = () => {
     return (
-        <div className="py-4 text-white text-center font-bold text-2xl bg-violet-500 sticky">
+        <header className="py-4 mb-8 text-white text-center font-bold text-2xl sticky top-0 backdrop-blur-md  bg-gray-800/40">
             Todo App
-        </div>
+        </header>
     )
 }
 
