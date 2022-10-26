@@ -29,8 +29,8 @@ const App = () => {
     return (
         <div>
             {console.log(todos)}
-            <Header />
-            <div className="p-4 bg-slate-900 h-screen relative">
+            <div className="bg-slate-900 min-h-screen relative">
+                <Header />
                 <TodoInput addTodo={addTodo} />
                 { todos ? (
                     <TodoList todos={todos} removeTodo={removeTodo}/>
