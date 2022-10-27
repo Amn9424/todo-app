@@ -28,8 +28,12 @@ const App = () => {
 
     return (
         <div>
+<<<<<<< HEAD
             {console.log(todos)}
             <div className="p-0 m-0 bg-slate-900 min-h-screen relative ">
+=======
+            <div className="bg-slate-900 min-h-screen relative flex flex-col items-center">
+>>>>>>> header
                 <Header />
                 <TodoInput addTodo={addTodo} />
                 { todos ? (
