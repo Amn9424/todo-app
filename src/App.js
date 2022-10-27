@@ -28,8 +28,7 @@ const App = () => {
 
     return (
         <div>
-            {console.log(todos)}
-            <div className="bg-slate-900 min-h-screen relative">
+            <div className="bg-slate-900 min-h-screen relative flex flex-col items-center">
                 <Header />
                 <TodoInput addTodo={addTodo} />
                 { todos ? (
