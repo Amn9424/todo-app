@@ -4,7 +4,8 @@ import { v4 } from "uuid";
 const TodoInput = ({ addTodo }) => {
     const [todo, setTodo] = useState("");
 
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault()
         if (todo === "") {
             return alert("Please enter a todo then submit !");
         }
@@ -19,10 +20,10 @@ const TodoInput = ({ addTodo }) => {
     };
 
     return (
-        <div className="p-6 px-8 mb-5 mx-4 bg-gray-800 font-medium rounded-md min-w-max">
-            <form className="">
+        <div className="mb-8 w-full">
+            <form className="flex justify-center">
                 <input
-                    className="p-2 text-white bg-gray-500 placeholder-gray-800 focus:ring focus:ring-blue-500 focus:border-blue-500 rounded"
+                    className="w-3/4 max-w-lg p-2 text-white bg-gray-500 placeholder-gray-800 rounded rounded-r-none "
                     type="text"
                     placeholder="Enter your todos here"
                     value={todo}
@@ -32,11 +33,12 @@ const TodoInput = ({ addTodo }) => {
                 />
 
                 <button
-                    onClick={() => {
-                        handleSubmit();
+                    onClick={(e) => {
+                        handleSubmit(e)
                     }}
-                    className="text-white p-2 rounded-md bg-blue-800 hover:bg-blue-900 focus:ring focus:ring-blue-600"
+                    className="w-50 text-white p-2 rounded-md bg-blue-800 hover:bg-blue-900 rounded-l-none"
                 >
+                    
                     Add Todo
                 </button>
             </form>
@@ -45,3 +47,5 @@ const TodoInput = ({ addTodo }) => {
 };
 
 export default TodoInput;
+
+

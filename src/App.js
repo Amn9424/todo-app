@@ -28,19 +28,15 @@ const App = () => {
 
     return (
         <div>
-<<<<<<< HEAD
             {console.log(todos)}
-            <div className="p-0 m-0 bg-slate-900 min-h-screen relative ">
-=======
             <div className="bg-slate-900 min-h-screen relative flex flex-col items-center">
->>>>>>> header
                 <Header />
                 <TodoInput addTodo={addTodo} />
-                { todos ? (
+                { todos.length > 0 ? 
                     <TodoList todos={todos} removeTodo={removeTodo}/>
-                ) : (
-                    <h2 className="text-white">Enter some Todo</h2>
-                ) }
+                 : 
+                    <h2 className="text-gray-400 mt-8">Enter some Todo</h2>
+                 }
                 
             </div>
             
