@@ -8,7 +8,7 @@ const TodoList = ({ todos, removeTodo }) => {
                 <div key={Todo.id} 
                     className="w-4/5 max-w-2xl px-2 text-white  bg-gray-800/40 mb-4 rounded-md flex justify-between items-center ">
                     
-                    <span className="w-80 max-w-2xl px-2 overflow-hidden text-ellipsis whitespace-nowrap text-center">
+                    <span className="w-80 max-w-2xl px-2 overflow-hidden text-ellipsis whitespace-nowrap">
                         {Todo.todo}
                     </span>
 
